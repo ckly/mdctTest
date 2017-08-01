@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="procedure">
+<!-- 
+	<insert id="insertData" parameterType="hashmap">
+		{ call CALL_BCH_RANDOMRANK(#{ranVal},#{limVal}) }
+	</insert> 
+-->
+	
+	<select id="randomList" resultType="com.test.bchtest.model.dto.procedure.RandomRankDTO">
+		select nm,kor,eng,mat,sci,mus,gym,art,tot from bch_randomrank_tbl
+	</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

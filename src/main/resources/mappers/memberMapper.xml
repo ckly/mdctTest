@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	
+	<select id="memberList" resultType="com.test.bchtest.model.dto.member.MemberDTO">
+		SELECT USERID,USERNAME,PW,EMAIL,REGDATE  FROM BCH_MEMBER
+	</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
